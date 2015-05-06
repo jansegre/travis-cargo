@@ -107,7 +107,7 @@ def build_kcov():
     os.chdir(current)
 
 def raw_coverage(test_args, merge_msg, kcov_merge_args, kcov_merge_dir):
-    build_kcov()
+    #build_kcov() # let me try without this
 
     test_binaries = []
     # look through the output of `cargo test` to find the test
